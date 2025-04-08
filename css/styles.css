@@ -1,0 +1,484 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f8e9;
+    color: #4e342e;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #558b2f;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Cabecera */
+header {
+    background-color: #8bc34a;
+    padding: 1rem 0;
+}
+
+.contenido_cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo {
+    max-width: 5vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+h1 {
+    font-size: 28px;
+    color: #558b2f;
+    margin: 0;
+}
+
+/* Botón de menú */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #689f38;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav .menu a:hover {
+    background-color: #558b2f;
+}
+
+/* Bienvenida (inicio) */
+.bienvenida .contenido_flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bienvenida .texto {
+    flex: 1;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.bienvenida .imagen img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bienvenida .imagen figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 0.5rem;
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+}
+
+/* Quiénes Somos */
+.quienes_somos .contenido,
+.nuestra_historia .contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.quienes_somos .contenido_flex,
+.nuestra_historia .contenido_flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quienes_somos .imagen img,
+.nuestra_historia .imagen img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quienes_somos .imagen figcaption,
+.nuestra_historia .imagen figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 0.5rem;
+}
+
+.nuestra_historia .contenido_flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.quienes_somos .texto,
+.nuestra_historia .texto {
+    flex: 1;
+    max-width: 800px;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    background-color: #33691e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer ul li img {
+    max-width: 30px;
+    filter: brightness(0) invert(1);
+}
+
+footer ul li img:hover {
+    filter: brightness(0.8) invert(0.8);
+}
+
+
+
+/* Contenido adopción perritos y gatitos */
+.contenido_adopcion .contenido_flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenido_adopcion .imagen {
+    text-align: center;
+}
+
+.contenido_adopcion .imagen_perrito_feliz {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido_adopcion .imagen_gatito_feliz {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido_adopcion figcaption {
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.contenido_adopcion .texto {
+    flex: 1;
+    max-width: 800px; 
+    text-align: justify;
+}
+
+/* Sección de los perritos en adopción */
+.perritos-adopcion {
+    padding: 2rem;
+    background-color: #f9fbe7;
+}
+
+.tabla_perritos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.perrito_item {
+    background-color: #f8fff5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.perrito_item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.perrito_item p {
+    font-size: 1rem;
+}
+
+.perrito_item p strong {
+    font-size: 1rem;
+}
+
+.perritos-adopcion figcaption {
+    font-size: 0.8rem;
+    color: #757575;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Sección de los gatitos en adopción */
+.gatitos-adopcion {
+    padding: 2rem;
+    background-color: #f9fbe7;
+}
+
+.tabla_gatitos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gatito_item {
+    background-color: #f8fff5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.gatito_item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gatito_item p {
+    font-size: 1rem;
+}
+
+.gatito_item p strong {
+    font-size: 1rem;
+}
+
+.gatitos-adopcion figcaption {
+    font-size: 0.8rem;
+    color: #757575;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Sección de contacto con fondo de gradiente */
+.contacto {
+    background: linear-gradient(to right, #689F38, #DCEDC8);
+    padding: 2rem;
+    color: white;
+}
+
+/* Estilo para centrar solo el contenido de la página de contacto */
+.contacto .consultas,
+.contacto .informacion_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Centrar el formulario de contacto */
+.contacto #formulario_contacto {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo para la sección de información de contacto */
+.contacto .informacion_contacto {
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: left; /* Para que el texto esté alineado a la izquierda */
+}
+
+/* Ajustes adicionales para que los formularios y la información estén bien alineados */
+.contacto .formulario {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Media Queries para móvil */
+@media (max-width: 768px) {
+
+    /* Esconde la barra de navegación y muestra el botón hamburguesa */
+    nav .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    /* Al hacer clic en el botón de menú, se muestra la barra de navegación */
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        font-size: 1.2rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    }
+
+    /* Ajustar la tabla de perritos en adopción para pantallas pequeñas */
+    .tabla_perritos {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
+        gap: 1rem;
+    }
+
+    /* Ajustar la tabla de gatitos en adopción para pantallas pequeñas */
+    .tabla_gatitos {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
+        gap: 1rem;
+    }
+
+    /* Ajustes para la sección de bienvenida */
+    .bienvenida .contenido_flex {
+        flex-direction: column; /* Apilar los elementos en columnas */
+        gap: 1.5rem; /* Mayor espacio entre los elementos */
+    }
+
+    /* Hacer que las imágenes sean más pequeñas en pantallas pequeñas */
+    .bienvenida .imagen img {
+        max-width: 90%; /* Imágenes más pequeñas en móviles */
+    }
+
+    /* Ajustes de márgenes y padding para una mejor distribución */
+    h1, h2 {
+        font-size: 1.8rem; /* Reducir el tamaño de los encabezados */
+        margin: 0.5rem 0;
+    }
+
+    .quienes_somos .contenido_flex,
+    .nuestra_historia .contenido_flex {
+        flex-direction: column; /* Apilar elementos en columnas */
+        gap: 2rem;
+    }
+
+    /* Ajuste de tamaño para las imágenes en las secciones de Quiénes Somos y Nuestra Historia */
+    .quienes_somos .imagen img,
+    .nuestra_historia .imagen img {
+        max-width: 80%; /* Reducir el tamaño de las imágenes en móviles */
+    }
+
+    .logo {
+        max-width: 30vw;  /* Logo más pequeño en pantallas pequeñas */
+    }
+
+    /* Cambiar la presentación de los perritos y gatitos */
+    .contenido_adopcion .contenido_flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contenido_adopcion .imagen_perrito_feliz,
+    .contenido_adopcion .imagen_gatito_feliz {
+        max-width: 90%;
+    }
+
+    /* Ajuste del formulario de contacto */
+    .contacto #formulario_contacto {
+        max-width: 90%;
+        width: 100%; /* Asegurarse de que ocupe el 100% de la pantalla */
+    }
+
+    /* Asegurarse de que el contenido de las tablas se ajuste bien */
+    .perrito_item img,
+    .gatito_item img {
+        max-width: 100%; /* Asegura que las imágenes no se desborden */
+    }
+
+}

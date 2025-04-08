@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Punto de Encuentro Animal Garrigoles</title>
+    <link rel="icon" href="logo_huella.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="contacto">
+
+    <!-- cabecera -->
+
+    <header>
+        <div class="contenido_cabecera">
+            <img src="imagenes_html/logo_huella.jpg" alt="logo" class="logo">
+            <h1>Punto de Encuentro Animal Garrigoles</h1>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+        </div>
+
+        <!-- barra de navegacion -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="perritos.html">Perritos</a></li>
+                <li><a href="gatitos.html">Gatitos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- contenido -->
+
+    <main>
+
+        <!-- quieres adoptar o tienes dudas? -->
+
+        <section class="consultas">
+            <h2>¿Quieres adoptar o tienes dudas?</h2>
+            <h3>Rellene el siguiente formulario</h3>
+
+            <!-- formulario de contacto -->
+
+            <form action="#" method="post" id="formulario_contacto">
+                <div class="formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="consulta">Tipo de consulta:</label>
+                    <select id="consulta" name="consulta" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="adoptar_perro">Adoptar perro</option>
+                        <option value="adoptar_gato">Adoptar gato</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="donaciones">Donaciones</option>
+                        <option value="otras_dudas">Otras dudas</option>
+                    </select>
+                </div>
+
+                <div class="formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- información de contacto -->
+
+        <section class="informacion_contacto">
+            <h3>También puede contactarnos por:</h3>
+            <ul>
+                <li><strong>Teléfono fijo:</strong> 123 456 789</li>
+                <li><strong>Teléfono móvil:</strong> 987 654 321</li>
+                <li><strong>Email:</strong> contacto@puntoencuentro.com</li>
+                <li><strong>Dirección:</strong> Calle de los Animales, 12, Garrigoles</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- pie de página -->
+
+    <footer>
+        <p>&copy; 2025 Punto de Encuentro Animal Garrigoles. Todos los derechos reservados.</p>
+        <ul class="redes_sociales">
+            <li><a href="#" aria-label="Facebook"><img src="imagenes_html/logo_facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" aria-label="Instagram"><img src="imagenes_html/logo_instagram.png" alt="Instagram"></a></li>
+            <li><a href="#" aria-label="Twitter"><img src="imagenes_html/logo_twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
